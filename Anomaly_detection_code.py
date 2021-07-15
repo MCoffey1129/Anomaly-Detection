@@ -134,7 +134,7 @@ plt.show()
 # better than K-means can. Similar to above we take the smallest clusters in the data and label those as anomalies.
 
 # Initialize and fit the DBSCAN model
-db = DBSCAN(eps=0.5, min_samples=1, n_jobs=-1).fit(versi_sc)
+db = DBSCAN(eps=0.8, min_samples=1, n_jobs=-1).fit(versi_sc)
 
 # Obtain the predicted labels and calculate number of clusters
 pred_labels = db.labels_
